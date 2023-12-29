@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://picsum.photos/1920/1080'); 
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.output {
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+    transform: scale(0.95);
+}
